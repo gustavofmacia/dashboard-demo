@@ -9,7 +9,8 @@ Key features include:
 - CRUD operations for todos
 - Product and shopping cart management
 - Responsive sidebar and top menu navigation
-- API endpoints for data operations
+- API endpoints for data operations using Next.js Route Handlers
+- Server Actions for direct server-side logic and data mutations
 - Database seeding for development
 
 This guide outlines the steps to run the application in **development**, **production**, and **staging** environments.
