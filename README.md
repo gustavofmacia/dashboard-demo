@@ -7,7 +7,7 @@ Key features include:
 
 - User authentication and role management
 - CRUD operations for todos
-- Product and shopping cart management
+- Product and shopping cart management (shopping cart uses cookies for persistence)
 - Responsive sidebar and top menu navigation
 - API endpoints for data operations using Next.js Route Handlers
 - Server Actions for direct server-side logic and data mutations
