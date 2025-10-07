@@ -10,8 +10,14 @@
 !.yarn/releases
 !.yarn/versions
 
+# db
+/postgres
+
 # testing
 /coverage
+
+# files generated automatically for package
+/src/generated
 
 # next.js
 /.next/
@@ -32,6 +38,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.template
 
 # vercel
 .vercel
