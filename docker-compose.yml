@@ -1,0 +1,16 @@
+services:
+  todosDB:
+    image: postgres:18.0
+    container_name: admin-todos-db
+    restart: always
+    ports:
+      - "5558:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGTZ: America/Argentina/Buenos_Aires
+    volumes:
+      - admin-todos-db:/var/lib/postgresql/data
+
+volumes:
+  admin-todos-db:
