@@ -1,0 +1,9 @@
+model Todo {
+  id          String   @id @default(uuid())
+  description String
+  complete    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("todo")
+}
