@@ -1,5 +1,17 @@
 # Admin Todos
 
+**Admin Todos** is a full-stack web application built with Next.js, Prisma, and PostgreSQL.  
+It provides an admin dashboard for managing users, products, shopping carts, and todos.
+
+Key features include:
+
+- User authentication and role management
+- CRUD operations for todos
+- Product and shopping cart management
+- Responsive sidebar and top menu navigation
+- API endpoints for data operations
+- Database seeding for development
+
 This guide outlines the steps to run the application in **development**, **production**, and **staging** environments.
 
 ---
