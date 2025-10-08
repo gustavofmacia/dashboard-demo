@@ -1,13 +1,16 @@
 services:
   todosDB:
     image: postgres:18.0
-    container_name: admin-todos-db
+    container_name: dashboard-demo
     restart: always
     ports:
-      - "5558:5432"
+      - "${HOST_DB_PORT}:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       PGTZ: America/Argentina/Buenos_Aires
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
+      - dashboard-demo-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  dashboard-demo-postgres-data:

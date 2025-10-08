@@ -40,11 +40,10 @@ netsh interface ipv4 show excludedportrange protocol=tcp
 
 If the default PostgreSQL port (5432) falls within a reserved range, Docker cannot bind to it.
 
-Solution: choose a port outside the reserved ranges in your docker-compose.yml. For example:
+Solution: choose a port outside the reserved ranges and set it in your .env file. For example:
 
-```yaml
-ports:
-  - 5558:5432
+```env
+HOST_DB_PORT=5558
 ```
 
 ## 🚀 Development
